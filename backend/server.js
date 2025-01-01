@@ -13,12 +13,18 @@ let globalTokens = null;  // Store tokens globally
 
 
  
-const CLIENT_ID = process.env.CLIENT_ID;
-const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = process.env.REDIRECT_URI;
+const clientId = process.env.CLIENT_ID;
+const clientSecret = process.env.CLIENT_SECRET;
+const redirectUri = process.env.REDIRECT_URI;
+
+if (!clientId || !clientSecret || !redirectUri) {
+    console.error("Missing environment variables. Ensure CLIENT_ID, CLIENT_SECRET, and REDIRECT_URI are set.");
+    process.exit(1);
+}
 
 
-const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
+
+const oAuth2Client = new google.auth.OAuth2(clientId,clientSecret,redirectUri);
 
 // Route to generate authentication URL
  app.get('/auth-url', (req, res) => {
