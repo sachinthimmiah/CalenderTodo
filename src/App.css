@@ -1,0 +1,148 @@
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f7f6;
+ }
+
+ .App {
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
+
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+ }
+
+
+ h1 {
+   text-align: center;
+   color: #333;
+ }
+
+
+ button {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   padding: 10px 15px;
+   margin: 5px;
+   cursor: pointer;
+   border-radius: 5px;
+   font-size: 14px;
+
+ }
+
+ button:hover {
+   background-color: #45a049;
+ }
+
+ button:focus {
+   outline: none;
+ }
+
+
+ table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+   text-align: left;
+ }
+
+ th, td {
+   padding: 12px;
+   border-bottom: 1px solid #ddd;
+   color: black;
+ }
+
+ th {
+   background-color: #bbc2c7;
+   font-weight: bold;
+   color: black;
+ }
+
+ td {
+   background-color: #fafafa;
+   color: black;
+ }
+
+ #btn1 {
+   background-color: #51e781;
+ }
+
+ #btn2 {
+   background-color: red;
+ }
+
+ form {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   margin-bottom: 20px;
+ }
+ input[type="text"] {
+   padding: 10px;
+   border-radius: 5px;
+   font-size: 16px;
+   background-color: #c8bbbb;
+   color: black;
+
+ }
+
+ input[type="datetime-local"] {
+   padding: 10px;
+   /* border: 1px solid #ccc; */
+   border-radius: 5px;
+   font-size: 14px;
+   background-color: #c8bbbb;
+   color: black;
+ }
+
+ input[type="text"]:focus, input[type="datetime-local"]:focus {
+   border-color: #4CAF50;
+   outline: none;
+ }
+
+
+ p {
+   text-align: center;
+   font-size: 14px;
+   color: #888;
+ }
+
+ h2 {
+   margin-top: 20px;
+   text-align: center;
+   color: #333;
+ }
+
+
+ div#root {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px auto;
+ }
+
+ #btn1 {
+   margin: 0 auto;
+   display: flex;
+ }
+
+ form button {
+   background-color: #2196F3;
+   font-size: 16px;
+ }
+
+ form button:hover {
+   background-color: #1976D2;
+ }
+
+ button[type="button"] {
+   background-color: #f0ad4e;
+
+ }
+
+ button[type="button"]:hover {
+   background-color: #ec971f;
+ }
